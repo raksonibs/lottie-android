@@ -34,10 +34,10 @@ class TestRobot {
   static void testChangingCompositions(MainActivity activity, String firstFile, String secondFile) {
     final LottieAnimationView view = new LottieAnimationView(activity);
     loadCompositionOnView(view, null, firstFile);
-    recordScreenshots(view, "testChangingCompositions_" + firstFile, DEFAULT_ANIMATED_PROGRESS);
+    recordScreenshots(view, "test_changing_compositions_" + firstFile, DEFAULT_ANIMATED_PROGRESS);
 
     loadCompositionOnView(view, null, secondFile);
-    recordScreenshots(view, "testChangingCompositions_" + secondFile, DEFAULT_ANIMATED_PROGRESS);
+    recordScreenshots(view, "test_changing_compositions_" + secondFile, DEFAULT_ANIMATED_PROGRESS);
 
     cleanUpView(view, activity);
   }
